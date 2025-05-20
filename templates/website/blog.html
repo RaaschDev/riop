@@ -1,0 +1,261 @@
+{% extends "base.html" %}
+
+{% block title %}Blog - Rio Piracicaba{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gradient-to-b from-amber-50 to-amber-100">
+    <!-- Hero Section -->
+    <div class="relative h-[40vh] bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1518998053901-5348d3961a04?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-900/90 to-amber-800/70">
+            <div class="container mx-auto px-4 h-full flex items-center">
+                <div class="text-white max-w-2xl">
+                    <h1 class="text-5xl font-bold mb-4">Blog Rio Piracicaba</h1>
+                    <p class="text-xl">Descubra histórias, curiosidades e novidades sobre nossa cidade histórica</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-16">
+        <!-- Featured Article -->
+        <div class="mb-16">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                    <div class="relative h-[400px] md:h-auto">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
+                             alt="Estrada Real" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-amber-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                            Destaque
+                        </div>
+                    </div>
+                    <div class="p-8 md:p-12">
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <span class="text-sm">15 de Março, 2024</span>
+                            <span class="mx-2">•</span>
+                            <span class="text-sm">História</span>
+                        </div>
+                        <h2 class="text-3xl font-bold text-amber-900 mb-4">A Estrada Real: Um Caminho de História e Cultura</h2>
+                        <p class="text-gray-600 mb-6">
+                            Explore a rica história da Estrada Real e seu impacto no desenvolvimento de Rio Piracicaba. 
+                            Descubra como esta rota histórica moldou a cultura e a economia da região.
+                        </p>
+                        <a href="#" class="inline-flex items-center text-amber-600 hover:text-amber-700 font-semibold">
+                            Ler mais
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Articles Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Article 1 -->
+            <article class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                <div class="relative h-48">
+                    <img src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Igreja Colonial" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute top-4 left-4 bg-amber-500 text-white px-3 py-1 rounded-full text-sm">
+                        Patrimônio
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center text-gray-600 text-sm mb-3">
+                        <span>10 de Março, 2024</span>
+                        <span class="mx-2">•</span>
+                        <span>Arquitetura</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-amber-900 mb-3">Igrejas Históricas: Tesouros da Arquitetura Colonial</h3>
+                    <p class="text-gray-600 mb-4">
+                        Conheça as belas igrejas coloniais que preservam a história e a arte sacra de Rio Piracicaba.
+                    </p>
+                    <a href="#" class="text-amber-600 hover:text-amber-700 font-semibold inline-flex items-center">
+                        Ler mais
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                <div class="relative h-48">
+                    <img src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Gastronomia Local" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute top-4 left-4 bg-amber-500 text-white px-3 py-1 rounded-full text-sm">
+                        Gastronomia
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center text-gray-600 text-sm mb-3">
+                        <span>5 de Março, 2024</span>
+                        <span class="mx-2">•</span>
+                        <span>Culinária</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-amber-900 mb-3">Sabores da Tradição: A Gastronomia Local</h3>
+                    <p class="text-gray-600 mb-4">
+                        Descubra os pratos típicos e as receitas tradicionais que fazem parte da cultura gastronômica da região.
+                    </p>
+                    <a href="#" class="text-amber-600 hover:text-amber-700 font-semibold inline-flex items-center">
+                        Ler mais
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                <div class="relative h-48">
+                    <img src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Festas Tradicionais" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute top-4 left-4 bg-amber-500 text-white px-3 py-1 rounded-full text-sm">
+                        Cultura
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center text-gray-600 text-sm mb-3">
+                        <span>1 de Março, 2024</span>
+                        <span class="mx-2">•</span>
+                        <span>Festas</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-amber-900 mb-3">Festas e Tradições: A Alma da Cidade</h3>
+                    <p class="text-gray-600 mb-4">
+                        Conheça as festas tradicionais e manifestações culturais que mantêm viva a história de Rio Piracicaba.
+                    </p>
+                    <a href="#" class="text-amber-600 hover:text-amber-700 font-semibold inline-flex items-center">
+                        Ler mais
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                <div class="relative h-48">
+                    <img src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Natureza" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute top-4 left-4 bg-amber-500 text-white px-3 py-1 rounded-full text-sm">
+                        Natureza
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center text-gray-600 text-sm mb-3">
+                        <span>25 de Fevereiro, 2024</span>
+                        <span class="mx-2">•</span>
+                        <span>Turismo</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-amber-900 mb-3">Trilhas e Cachoeiras: Belezas Naturais</h3>
+                    <p class="text-gray-600 mb-4">
+                        Explore as trilhas históricas e cachoeiras que fazem parte do cenário natural de Rio Piracicaba.
+                    </p>
+                    <a href="#" class="text-amber-600 hover:text-amber-700 font-semibold inline-flex items-center">
+                        Ler mais
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                <div class="relative h-48">
+                    <img src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Artesanato" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute top-4 left-4 bg-amber-500 text-white px-3 py-1 rounded-full text-sm">
+                        Artesanato
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center text-gray-600 text-sm mb-3">
+                        <span>20 de Fevereiro, 2024</span>
+                        <span class="mx-2">•</span>
+                        <span>Artes</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-amber-900 mb-3">Artesanato Local: Mãos que Contam Histórias</h3>
+                    <p class="text-gray-600 mb-4">
+                        Conheça os artesãos e suas obras que preservam técnicas tradicionais e contam a história da região.
+                    </p>
+                    <a href="#" class="text-amber-600 hover:text-amber-700 font-semibold inline-flex items-center">
+                        Ler mais
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                <div class="relative h-48">
+                    <img src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Museus" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute top-4 left-4 bg-amber-500 text-white px-3 py-1 rounded-full text-sm">
+                        Museus
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center text-gray-600 text-sm mb-3">
+                        <span>15 de Fevereiro, 2024</span>
+                        <span class="mx-2">•</span>
+                        <span>História</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-amber-900 mb-3">Museus: Guardiões da Memória</h3>
+                    <p class="text-gray-600 mb-4">
+                        Visite os museus que preservam e contam a rica história de Rio Piracicaba e da Estrada Real.
+                    </p>
+                    <a href="#" class="text-amber-600 hover:text-amber-700 font-semibold inline-flex items-center">
+                        Ler mais
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-16 flex justify-center">
+            <nav class="flex items-center space-x-2">
+                <a href="#" class="px-4 py-2 text-amber-600 hover:text-amber-700 font-semibold">
+                    Anterior
+                </a>
+                <a href="#" class="px-4 py-2 bg-amber-500 text-white rounded-lg font-semibold">
+                    1
+                </a>
+                <a href="#" class="px-4 py-2 text-amber-600 hover:text-amber-700 font-semibold">
+                    2
+                </a>
+                <a href="#" class="px-4 py-2 text-amber-600 hover:text-amber-700 font-semibold">
+                    3
+                </a>
+                <a href="#" class="px-4 py-2 text-amber-600 hover:text-amber-700 font-semibold">
+                    Próxima
+                </a>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Remove underline from all links */
+    a {
+        text-decoration: none !important;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,33 @@
+<nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+    <div class="container mx-auto px-6">
+        <div class="flex justify-between items-center h-20">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <a href="{% url 'index' %}" class="text-2xl font-bold text-amber-900 hover:text-amber-700 transition-colors duration-300">
+                    Rio Piracicaba
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#historia" class="text-amber-900 hover:text-amber-600 transition-colors duration-300 relative group">
+                    História
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-600 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="{% url 'blog' %}" class="text-amber-900 hover:text-amber-600 transition-colors duration-300 relative group">
+                    Blog
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-600 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button class="text-amber-900 hover:text-amber-600 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
