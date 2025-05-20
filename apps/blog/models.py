@@ -1,6 +1,7 @@
 from django.db import models
 from utils.base_model import BaseModel
 from django.contrib.auth.models import User
+from ckeditor.fields import RichTextField
 
 
 
@@ -29,7 +30,7 @@ class Post(BaseModel):
 
     title = models.CharField(max_length=255, verbose_name="Título")
     slug = models.SlugField(max_length=255, verbose_name="Slug")
-    content = models.TextField(verbose_name="Conteúdo")
+    content = RichTextField(verbose_name="Conteúdo")
     category = models.ForeignKey(Category, on_delete=models.CASCADE, verbose_name="Categoria")
     author = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name="Autor")
     published = models.BooleanField(default=False, verbose_name="Publicado")

@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.website',
     'apps.blog',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +128,43 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# CKEDITOR_CONFIGS = {
+#     'default': {
+#         'height':'500px',
+#         # tab key conversion space number
+#         'tabSpaces': 4,
+#         # Toolbar Style
+#         'toolbar': 'Custom',
+#         # Toolbar buttons
+#         'toolbar_Custom': [
+#             ['Format'],
+#             ['Smiley', 'CodeSnippet'], 
+#             ['Bold', 'Italic', 'Underline', 'RemoveFormat', 'Blockquote'],
+#             ['TextColor', 'BGColor'],
+#             ['Link', 'Unlink'],
+#             ['NumberedList', 'BulletedList'],
+#             ['Maximize']
+#         ],
+#         # Add Code Block Plug-ins
+#         'extraPlugins': ','.join(['codesnippet']),
+#         'codeSnippet_languages': {
+#             'bash': 'Bash',
+#             'css': 'CSS',
+#             'django': 'Django',
+#             'html': 'HTML',
+#             'javascript': 'JavaScript',
+#             'php': 'PHP',
+#             'python': 'Python',
+#         }
+#     }
+# }
+
+JAZZMIN_SETTINGS = {
+    # title of the window (Will default to current_admin_site.site_title if absent or None)
+    "site_title": "Rio Piracicaba",
+    # Title on the login screen (190 by 64 is the default)
+    "site_header": "Rio Piracicaba",
+    # Title on the brand (190 by 64 is the default)
+    "site_brand": "Rio Piracicaba",
+}
